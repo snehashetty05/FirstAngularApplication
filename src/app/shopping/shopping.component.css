@@ -1,0 +1,37 @@
+
+.shopping{
+  text-align: center;
+  border: 3px solid;
+  margin-left: 400px;
+  margin-right: 400px;
+  padding-top: 30px;
+  background-color: blueviolet;
+}
+button
+{
+  margin-left: 10px;
+}
+
+.container
+{
+  margin-top: 30px;
+  border:1px solid rgb(139, 20, 20) ;
+  background-color:  aliceblue;;
+
+
+}
+input[type=text]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(139, 20, 20);
+  box-sizing: border-box;
+  border-radius: 20px;
+
+}
+
+.container1{
+  border: none;
+  margin-top: 10px;
+}

@@ -1,0 +1,29 @@
+
+
+<h1>Calculator</h1>
+
+<div class= "calculator">
+
+  <div class="number">
+    <h4>Number1</h4>
+    <input type="number" [(ngModel)]="n1" placeholder="Enter First Number " >
+    <br><br>
+    <h4>Number2</h4>
+    <input type="number" [(ngModel)]="n2" placeholder="Enter Second Number ">
+  </div>
+  <br><br>
+  <button (click)="AddNo()"  type="button">ADD</button>
+  <br><br>
+  <button (click)="SubNo()"  type="button">SUBTRACT</button>
+  <br><br>
+  <button (click)="MultNo()"  type="button">MULTIPLE</button>
+  <br><br>
+  <button (click)="DivNo()"  type="button">DIVIDE</button>
+  <br><br>
+  <div class="container" style="background-color:#f1f1f1">
+    <div class="back-center">
+    <button (click)="cancel()" type="button" class="cancelbtn" style="background-color:red;" >Back</button>
+  </div>
+  </div>
+</div>
+

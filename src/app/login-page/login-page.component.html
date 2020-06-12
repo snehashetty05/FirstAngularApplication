@@ -1,0 +1,29 @@
+
+<div>
+  <h2>Login Form</h2>
+<div class="login-form">
+  <div class="imgcontainer">
+    <img src="assets\images\loginicon.jpg" alt="icon" class="loginicon">
+  </div>
+  <div class="container">
+  <h4><b>Email</b></h4>
+  <input (keyup)="Validate()" type="text" [(ngModel)]="email" placeholder="Enter your Email">
+  <br><br>
+  <h4><b>Password</b></h4>
+  <input (keyup)="Validate()" type="password" [(ngModel)]="password" placeholder="Enter your Password">
+  <br><br>
+  </div>
+  <button (click)="login()"  [disabled] = "!isValid" type="button">LOGIN</button>
+  <br>
+  <div class="content-left">
+      <input  type="checkbox" checked="checked" name="remember"> Remember me
+  </div>
+  <br>
+  <div class="container" style="background-color:#f1f1f1">
+    <button (click)="cancel()" type="button" class="cancelbtn" style="text-align: left">Back</button>
+    <span class="psw"><a href="#">Forgot password?</a></span>
+  </div>
+
+</div>
+</div>
+

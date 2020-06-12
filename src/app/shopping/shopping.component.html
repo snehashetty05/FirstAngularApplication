@@ -1,0 +1,38 @@
+
+<div class="shopping" style="text-align: center;">
+
+  <div>
+    <h4><b>Enter new Product</b></h4><input [(ngModel)]="newProduct" type="text"><br>
+    <h4><b>Enter new Price</b></h4><input [(ngModel)]="newPrice" type="text"><br>
+    <button *ngIf="isEditing" (click)="edit()" class="btn btn-warning" type="button">Edit</button>
+    <button *ngIf="isEditing" (click)="cancelEdit()" class="btn btn-warning" type="button">Cancel</button>
+    <button *ngIf="!isEditing" (click)="addNewProduct()" class="btn btn-primary" type="button">Add to Cart</button>
+  </div>
+
+
+  <div class="container" style="width:500px">
+  <div class="row">
+    <div class="col">Sr No</div>
+    <div class="col">Product Name</div>
+    <div class="col">Price</div>
+    <div class="col"></div>
+    <div class="col"></div>
+  </div>
+  <div *ngFor="let item of products;index as i" class="row">
+    <div class= "col">{{i+1}}</div>
+    <div class= "col">{{item.name}}</div>
+    <div class= "col">{{item.price}}</div>
+    <div class= "col"><button (click)="editProduct(i)" class="btn btn-warning" type="button">Edit</button></div>
+    <div class= "col"><button (click)="removeProduct(i)" class="btn btn-danger" type="button">Delete</button></div>
+    <br><br>
+  </div>
+  </div>
+</div>
+
+<div style="text-align: center;">
+<div class="container1" style="background-color:#f1f1f1">
+  <button (click)="cancel()" type="button" class="btn btn-danger" style="background-color:red;" >Back</button>
+</div>
+</div>
+
+

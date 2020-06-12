@@ -1,0 +1,27 @@
+.mainpage{
+    padding-top: 50px;
+    border-style: solid;
+    text-align: center;
+    margin-left: 500px;
+    padding-bottom: 50px;
+    margin-top: 50px;
+    margin-right: 500px;
+}
+
+.block {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color:darkorange;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.block:hover {
+  background-color:blueviolet;
+  color: black;
+}
